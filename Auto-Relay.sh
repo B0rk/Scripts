@@ -108,8 +108,8 @@ apt update && apt install impacket-scripts -y
 fi
 
 #Removing original Responder Config File
-echo -e "[${GREEN}+${RESET}] Removing default Responder config file."
-rm -rf /usr/share/responder/Responder.conf
+echo -e "[${GREEN}+${RESET}] Renaming default Responder config file to \"/usr/share/responder/Responder.conf.old\"."
+mv /usr/share/responder/Responder.conf /usr/share/responder/Responder.conf.old
 
 #Downloading Modified Responder Config File
 echo -e "[${GREEN}+${RESET}] Downloading modified Responder config file"
