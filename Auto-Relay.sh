@@ -53,7 +53,7 @@ if [[ $(/usr/bin/id -u) -ne 0 ]]; then
 fi
 
 #Options
-while getopts 'r:h' opt; do
+while getopts 'r:jp:h' opt; do
   case "$opt" in
     r)
       range="$OPTARG"
@@ -76,6 +76,7 @@ while getopts 'r:h' opt; do
       echo -e "[${RED}!${RESET}] For usage, use $(basename $0) -h"
       exit 1
       ;;
+    
   esac
 done
 shift "$(($OPTIND -1))"
