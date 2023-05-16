@@ -48,12 +48,15 @@ echo -e "${RESET}"
 
 #Root Check
 if [[ $(/usr/bin/id -u) -ne 0 ]]; then
-    echo -e "[${RED}!${RESET}] Must be running as root. Quitting.\n"
+    echo -e "[${RED}!${RESET}] Must be running as root or sudo. Quitting.\n"
     exit
 fi
 
+#Set Range to Ethernet Adapter by default unless a range is specified with -r
+range="$(ip a | grep -w "inet" | cut -d " " -f 6 | grep -v "127.0.0.1/8")"
+
 #Options
-while getopts 'r:jp:h' opt; do
+while getopts 'r:h' opt; do
   case "$opt" in
     r)
       range="$OPTARG"
@@ -62,8 +65,8 @@ while getopts 'r:jp:h' opt; do
 
     h)
       echo -e "[${RED}!${RESET}] Usage: $(basename $0) -r 10.10.10.0/24"
-      echo -e "              -h:  print this help dialog"
       echo -e "              -r:  specify IP Range (Required)"
+      echo -e "              -h:  print this help dialog"
       exit 0
       ;;
 
@@ -115,6 +118,9 @@ mv /usr/share/responder/Responder.conf /usr/share/responder/Responder.conf.old
 #Downloading Modified Responder Config File
 echo -e "[${GREEN}+${RESET}] Downloading modified Responder config file"
 curl https://raw.githubusercontent.com/B0rk/Scripts/main/Responder_Config/ntlmrelayx_responder.conf -o /usr/share/responder/Responder.conf &> /dev/null
+
+#Echo range selection
+echo -e "[${GREEN}+${RESET}] Range is currently set to ${range}."
 
 #Sleep to allow for removal and downloading to complete.
 echo -e "[${GREEN}+${RESET}] Taking a 5 second nap to get my shit together..."
