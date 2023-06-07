@@ -74,8 +74,8 @@ while getopts 'r:h' opt; do
 
     h)
       echo -e "[${RED}!${RESET}] Usage: $(basename $0) -r 10.10.10.0/24"
-      echo -e "              -r:  specify IP Range (Required)"
-      echo -e "              -h:  print this help dialog"
+      echo -e "              -r:  Specify IP Range or target text file. (Required)"
+      echo -e "              -h:  Print this help dialog."
       exit 0
       ;;
 
