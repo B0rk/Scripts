@@ -51,7 +51,7 @@ echo -e "${GREEN}                                   %%%%%%%%%%%#/,              
 echo -e "${GREEN}                                                                                ${RESET}"
 echo -e "${GREEN}                                                                                 ${RESET}"
 echo -e "${GREEN}                                                                                 ${RESET}"
-echo -e "${GREEN}               by ${BLUE}Kyle Hoehn ${RED}with code stealing ${GREEN}from ${BLUE}Chris McMahon ${RESET}"
+echo -e "${GREEN}       by ${BLUE}Kyle Hoehn ${RED}with (minor) code stealing ${GREEN}from ${BLUE}Chris McMahon ${RESET}"
 echo -e "${GREEN}                                                                                 ${RESET}"
 echo -e "${GREEN}                                                                                 ${RESET}"
 
