@@ -113,13 +113,6 @@ fi
 
 sleep 2
 
-# checking for wrong scan argument
-
-#if [[ "$range" != "*.*.*.*/*" ]]; then
-#        echo -e "[${RED}!${RESET}] incorrect range..."
-#        exit 1
-#fi
-
 #Variables for scripting use
 varWorkingDir="$(pwd)"
 
@@ -147,7 +140,7 @@ echo -e "[${RED}!${RESET}] Installing Impacket-Scrpits."
 apt update && apt install impacket-scripts -y
 fi
 
-#Removing original Responder Config File
+#Renaming original Responder Config File
 echo -e "[${GREEN}+${RESET}] Renaming default Responder config file to \"/usr/share/responder/Responder.conf.old\"."
 mv /usr/share/responder/Responder.conf /usr/share/responder/Responder.conf.old
 
